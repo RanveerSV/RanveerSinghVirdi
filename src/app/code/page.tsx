@@ -175,27 +175,6 @@ export default function Code() {
           </div>
 
           <div className="grid grid-cols-1 gap-12">
-            
-            {/* PROJECT: INDIGENOUS AUDIO DEEPFAKE DETECTION */}
-            <div className={`p-10 bg-zinc-900/10 border border-purple-500/30 rounded-sm relative overflow-hidden ${bootSequence ? 'fade-in-sequence' : 'opacity-0'}`} style={{ animationDelay: '600ms' }}>
-              <div className="absolute top-6 right-6">
-                <span className="text-[10px] font-mono bg-purple-500/10 text-purple-400 px-3 py-1 border border-purple-500/20 uppercase tracking-widest whitespace-nowrap">System_Deployed</span>
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-8 font-mono uppercase tracking-tight pr-48">
-                Indigenous Audio Deepfake Detection
-              </h3>
-              <p className="text-zinc-400 font-mono text-base mb-8 leading-relaxed max-w-4xl">
-                I developed an <span className="text-purple-500 font-bold">indigenous architecture</span> for synthetic speech forensics that fundamentally leapfrogs existing SOTA tools. While typical models are resource-heavy, my architecture is <span className="text-purple-500 font-bold">significantly lighter and faster</span>, achieving comparable accuracy with a fraction of the overhead. The system relies on specialized signal processing to identify spectral phase-shift artifacts characteristic of generative AI.
-              </p>
-              <div className="flex items-center gap-4 pt-8 border-t border-zinc-900/50">
-                <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest">Performance_Metrics:</span>
-                <div className="flex flex-wrap gap-2">
-                  {['Indigenous Architecture', 'SOTA Leapfrog', 'Forensic Grade'].map(tag => (
-                    <span key={tag} className="text-[10px] font-mono border border-zinc-800 px-3 py-1 text-zinc-500 bg-zinc-900/50 uppercase tracking-wider">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
 
             {/* PROJECT: PROMPT-BASED WHATSAPP ORACLE (Clickable Card) */}
             <a 
@@ -203,7 +182,7 @@ export default function Code() {
               target="_blank" 
               rel="noopener noreferrer"
               className={`block p-10 bg-zinc-900/10 border border-purple-500/30 rounded-sm relative overflow-hidden card-hover-effect group ${bootSequence ? 'fade-in-sequence' : 'opacity-0'}`} 
-              style={{ animationDelay: '700ms' }}
+              style={{ animationDelay: '600ms' }}
             >
               <div className="absolute top-6 right-6 flex flex-col items-end gap-2">
                 <div className="flex gap-2">
@@ -219,9 +198,13 @@ export default function Code() {
                 </h3>
               </div>
 
-              <p className="text-zinc-400 font-mono text-base mb-8 leading-relaxed max-w-4xl">
+              <p className="text-zinc-400 font-mono text-base mb-4 leading-relaxed max-w-4xl">
                 This is a <span className="text-purple-500 font-bold">prompt-based ranking system</span> designed to decode group chat dynamics through 3 distinct processing modules. Each module generates a detailed <span className="text-white font-bold">Character Card</span> for every participant, scoring them against the <span className="text-purple-500 font-bold">BIG 5 Personality Scheme</span> (OCEAN). <br /><br />
                 The system functions as a queryable oracle: when given a prompt such as <span className="italic">&quot;Who is most likely to...&quot;</span>, the engine uses <span className="text-purple-500 font-bold">cosine similarity</span> to rank individuals based on their personality traits. It transforms thousands of unstructured messages into a highly accurate predictive model of individual social archetypes.
+              </p>
+
+              <p className="text-zinc-600 font-mono text-xs mb-8 italic">
+                Built for use on your own chats, with the consent of everyone in them.
               </p>
 
               <div className="flex items-center gap-4 pt-8 border-t border-zinc-900/50">
